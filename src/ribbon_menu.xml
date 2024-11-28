@@ -1,0 +1,59 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon>
+    <tabs>
+      <tab id="PhBarchartTab" label="PhBarchart" insertAfterMso="TabView">
+        <group id="customGroup" label="Ph Barchart">
+          <button id="phNewChart" label="New" imageMso="TableStyleNew"  size="large" onAction="phNewChart"/>
+          <button id="phFormRedraw" label="Draw Form" imageMso="TableInsertExcel" onAction="phFormRedraw"/>
+          <button id="phFormSetting" label="Form Setting" imageMso="ViewCustomViews" onAction="phFormSetting"/>
+
+          <menu id="phMenuFunc" label="Auto Fomula" imageMso="FunctionWizard" size="large">
+            <button id="phFuncAF" label="Expected AF" onAction="phFuncAF"/>
+            <button id="phFuncDur" label="Duration" onAction="phFuncDur"/>
+            <button id="phFuncDiff" label="Differnce" onAction="phFuncDiff"/>
+          </menu>
+
+          <menu id="phMenuCalc" label="Calculate" imageMso="Calculator" size="large">
+            <button id="phCalcAF" label="Expected AF" onAction="phCalcAF"/>
+            <button id="phCalcDur" label="Duration" onAction="phCalcDur"/>
+            <button id="phCalcDiff" label="Differnce" onAction="phCalcDiff"/>
+          </menu>
+   
+          <menu id="phMenuGroup" label="Grouping Fx" imageMso="OutlineGroupMenu" size="large">
+            <button id="phGroupRange" label="Roll-Up Range" onAction="phGroupRange"/>
+            <button id="phGroupAll" label="Roll-Up All" onAction="phGroupAll"/>
+          </menu>
+          <button idMso="OutlineGroup"/>
+          <button idMso="OutlineUngroup"/>
+          <button idMso="OutlineSettings"/>
+
+          <menu id="phMenuBar" label="Draw Bar" imageMso="ChartTypeBarInsertGallery" size="large">
+            <button id="phDrawFull" label="Full" onAction="phDrawFull"/>
+            <button id="phDrawRange" label="Selected" onAction="phDrawRange"/>
+            <button id="phDrawClear" label="Clear Bars" onAction="phDrawClear"/>
+            <button id="phDrawClearAll" label="Clear All" onAction="phDrawClearAll" imageMso="InkDeleteAllInk"/>
+          </menu>
+
+          <menu id="phMenuRsc" label="Resource" imageMso="FunctionsEngineeringInsertGallery" size="large">
+            <button id="phRscFull" label="Full" onAction="phRscFull"/>
+            <button id="phRscRange" label="Selected" onAction="phRscRange"/>
+            <button id="phRscClear" label="Clear" onAction="phRscClear"/>
+          </menu>
+
+          <button idMso="ZoomIn"/>
+          <button idMso="ZoomOut"/>
+          <button id="phAbout" label="About" imageMso="Help" onAction="phAboutAction"/>
+        </group>
+
+        <group idMso="GroupFont" />
+
+        <group id="CustomUtils" label="Tools">
+          <splitButton idMso="PasteMenu" size="large"/>
+          <button idMso="SheetRowsInsert"/>
+          <button idMso="SheetRowsDelete"/>
+          <gallery idMso="ShapesInsertGallery" size="large"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
